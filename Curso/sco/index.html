@@ -6,203 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/Styles.css" />
-    <title>Nestlé</title>
+    <title>Sandbox Scorm by SPIRA México</title>
   </head>
   <body>
     <div class="content container">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Video de Bienvenida</div>
-            <div class="card-body">
-              <p class="card-text">Video de Introducción a cada Habilidad</p>
-              <button id="btn1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">Ver video</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Quiz 1</div>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional ModalQuiz1.</p>
-              <button id="btn2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalQuiz1" disabled>Ir al Quiz</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Contenidos</div>
-            <div class="card-body">
-              <p class="card-text">
-                <li>Videos</li>
-                <li>Podcast</li>
-              </p>
-              <button id="btn3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalAudio1" disabled>Ir al Podcast</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Workbook</div>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a id="btn4" href="assets/docs/WorkbookM1_Interactivo.pdf" class="btn btn-primary disabled" download="Workbook.pdf">Descargar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Descarga PDF</div>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a id="btn5" href="assets/docs/Infografía AVAS - OVAS.pdf" class="btn btn-primary disabled" download="consulta.pdf">Descargar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Infografia</div>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <button id="btn6" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalPDF">Ver PDF</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-header">Quiz 2</div>
-            <div class="card-body">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <button id="btn7" type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalQuiz2" disabled>Ir al Quiz</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 1 -->
-    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Bienvenida</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="visto(1);">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div id="contentVideo1" class="modal-body">
-            <!-- <iframe src="https://player.vimeo.com/video/461103236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="auto" height="auto" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Conoce la certificación"></iframe> -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="visto(1);">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- *** Navbar *** -->
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <img src="./assets/img/Spira-Slogan-Color.png" alt="logo" />
+        </li>
+      </ul>
+      <!-- *** -->
 
-    <!-- Modal 2 -->
-    <div class="modal fade" id="ModalQuiz1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Quiz 1</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="2" id="defaultCheck1" />
-              <label class="form-check-label" for="defaultCheck1"> Listo! </label>
+      <!-- *** Init *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-04.png" alt="icon" class="iconImg" /> Llamada <code>init();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para empezar la comunicación con su LMS.</p>
+                  <button id="btnInit" type="button" class="btn btn-primary">Activar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusInit">false</code></div>
+                </div>
+              </div>
+              <div class="box">
+                <br />
+                <p id="userLMS"></p>
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
         </div>
       </div>
-    </div>
+      <!-- *** -->
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="ModalAudio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Podcast 1</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="visto(3);">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <audio id="audio1" controls>
-              <source src="assets/audios/podcast.mp3" type="audio/mpeg" />
-              Podcast
-            </audio>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="visto(3);">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="modal fade" id="ModalQuiz2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Quiz 2</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="2" id="defaultCheck2" />
-              <label class="form-check-label" for="defaultCheck2"> Terminar curso </label>
+      <!-- *** Lesson Location *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-16.png" alt="icon" class="iconImg" /> Llamada <code>lesson_location();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para indicar en qué parte o sección del curso se a quedado el usuario.</p>
+                  <form id="formLocation">
+                    <div class="form-group">
+                      <label for="selectLocation">Pagina:</label>
+                      <select class="form-control" id="selectLocation">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </form>
+                  <button id="btnLocation" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusLocation">false</code></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
         </div>
       </div>
-    </div>
+      <!-- *** -->
 
-    <!-- Modal 5 -->
-    <div class="modal fade" id="ModalPDF" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">PDF</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form-check">
-                <iframe src="assets/docs/Infografía AVAS - OVAS.pdf" width="100%" height="700px">
-                </iframe>
+      <!-- *** Score Raw *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-07.png" alt="icon" class="iconImg" /> Llamada <code>score.raw();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para indicar la calificación del usuario, los LMS manejan hasta el 100%.</p>
+                  <form id="formRaw">
+                    <div class="form-group">
+                      <label for="selectRaw">Calificación:</label>
+                      <select class="form-control" id="selectRaw">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                        <option>50</option>
+                        <option>60</option>
+                        <option>70</option>
+                        <option>80</option>
+                        <option>90</option>
+                        <option>100</option>
+                      </select>
+                    </div>
+                  </form>
+                  <button id="btnRaw" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusRaw">false</code></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Terminate 1 *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-37.png" alt="icon" class="iconImg" /> Llamada <code>core.lesson_status(); </code>Metodo: <code>completed</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para marcar el completado del curso y saber que ya esta finalizado.</p>
+                  <button id="btnTerminate1" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusTerminate1">false</code></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- *** -->
+
+
+
+    </div><!--container-->
   </body>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

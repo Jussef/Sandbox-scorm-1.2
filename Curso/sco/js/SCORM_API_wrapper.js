@@ -255,7 +255,7 @@ pipwerks.SCORM.connection.initialize = function() {
         trace = pipwerks.UTILS.trace,
         makeBoolean = pipwerks.UTILS.StringToBoolean,
         debug = scorm.debug,
-        traceMsgPrefix = "SCORM.connection.initialize ";
+        traceMsgPrefix = "SCORM.connection.initialize";
 
     trace("connection.initialize called.");
 

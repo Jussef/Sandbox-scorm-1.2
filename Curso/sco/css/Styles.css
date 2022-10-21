@@ -9,7 +9,25 @@ body {
   font-family: sans-serif;
 }
 
+.trueColor{
+  color: rgb(0, 164, 0);
+}
+
 .card {
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.iconImg{
+  width: 35px;
+  margin-right: 10px;
 }

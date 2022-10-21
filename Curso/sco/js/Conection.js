@@ -3,7 +3,7 @@ var scorm = pipwerks.SCORM;
 function init() {
   scorm.version = "1.2";
   scorm.init();
-  console.log("%c scorm.init() " + scorm.init(), "font-size: 100%; color: #00ff22; font-weight: 700;");
+  console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #00ff22; font-weight: 700;");
 }
 
 function set(param, value) {
@@ -11,6 +11,7 @@ function set(param, value) {
   console.log("%c SCORM: set " + param + " " + value, "font-size: 100%; color: #00AEFF; font-weight: 700;");
   // console.log("Version ------->",scorm.get("cmi._version"));
   // console.log("Location ------->", scorm.get("cmi.core.lesson_location"));
+  // console.log("Nomebre ------->", scorm.get("cmi.core.student_name"));
   // console.log("Status ------->", scorm.get("cmi.core.lesson_status"));
   // console.log("Raw → ", scorm.get("cmi.core.score.raw"));
   save();
