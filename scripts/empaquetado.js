@@ -1,5 +1,5 @@
 const zipFolder = require("zip-a-folder");
-const nombreRepo = "Nestle_";
+const nombreRepo = "SandboxScormBySPIRA_";
 
 const months = [
   "ENE",

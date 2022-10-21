@@ -3,7 +3,7 @@ var scorm = pipwerks.SCORM;
 function init() {
   scorm.version = "1.2";
   scorm.init();
-  console.log("%c scorm.init() " + scorm.init(), "font-size: 100%; color: #00ff22; font-weight: 700;");
+  console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #00ff22; font-weight: 700;");
 }
 
 function set(param, value) {
