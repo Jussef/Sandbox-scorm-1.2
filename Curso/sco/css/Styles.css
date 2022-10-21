@@ -13,3 +13,12 @@ body {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
