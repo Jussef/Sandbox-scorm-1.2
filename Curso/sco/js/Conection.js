@@ -31,6 +31,32 @@ function complete() {
   save();
 }
 
+
+// Distintos complete
+function completed() {
+  scorm.set("cmi.core.lesson_status", "completed");
+  save();
+}
+function passed() {
+  scorm.set("cmi.core.lesson_status", "passed");
+  save();
+}
+// SCORM 2004 2nd Edition
+function completed2004() {
+  scorm.set("cmi.completion_status", "completed");
+  save();
+}
+function passed2004() {
+  scorm.set("cmi.success_status", "passed");
+  save();
+}
+
+
+function incomplete() {
+  scorm.set("cmi.core.lesson_status", "incomplete");
+  save();
+}
+
 function save() {
   scorm.save();
 }
