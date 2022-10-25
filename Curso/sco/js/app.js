@@ -25,13 +25,33 @@ $("#btnRaw").click(function () {
 });
 
 $("#btnTerminate1").click(function () {
-  let valTerminate1 = $("#selectTerminate1").val();
-  scorm.set("cmi.core.score.Terminate1", valTerminate1);
-  let valTerminate1LMS = scorm.get("cmi.core.score.Terminate1")
-  $("#statusTerminate1").text(valTerminate1LMS);
-  valTerminate1LMS > 0 ? $("#statusTerminate1").addClass("trueColor") : $("#statusTerminate1").removeClass("trueColor");
-  console.log("%c Status " + valTerminate1LMS, "font-size: 100%; color: #ff7e29; font-weight: 700;");
+  completed();
+  let lesson_status1 = scorm.get("cmi.core.lesson_status");
+  $("#statusTerminate1").text(lesson_status1);
+  lesson_status1 == "completed" ? $("#statusTerminate1").addClass("trueColor") : $("#statusTerminate1").removeClass("trueColor");
+  console.log("%c Status " + lesson_status1, "font-size: 100%; color: #ff7e29; font-weight: 700;");
 });
 
-    // complete();
-    // end();
+$("#btnTerminate2").click(function () {
+  passed();
+  let lesson_status2 = scorm.get("cmi.core.lesson_status");
+  $("#statusTerminate2").text(lesson_status2);
+  lesson_status2 == "passed" ? $("#statusTerminate2").addClass("trueColor") : $("#statusTerminate2").removeClass("trueColor");
+  console.log("%c Status " + lesson_status2, "font-size: 100%; color: #ff7e29; font-weight: 700;");
+});
+
+$("#btnTerminate3").click(function () {
+  completed2004();
+  let lesson_status3 = scorm.get("cmi.completion_status");
+  $("#statusTerminate3").text(lesson_status3);
+  lesson_status3 == "passed" ? $("#statusTerminate3").addClass("trueColor") : $("#statusTerminate3").removeClass("trueColor");
+  console.log("%c Status " + lesson_status3, "font-size: 100%; color: #ff7e29; font-weight: 700;");
+});
+
+$("#btnTerminate4").click(function () {
+  passed2004();
+  let lesson_status4 = scorm.get("cmi.success_status");
+  $("#statusTerminate4").text(lesson_status4);
+  lesson_status4 == "passed" ? $("#statusTerminate4").addClass("trueColor") : $("#statusTerminate4").removeClass("trueColor");
+  console.log("%c Status " + lesson_status4, "font-size: 100%; color: #ff7e29; font-weight: 700;");
+});
