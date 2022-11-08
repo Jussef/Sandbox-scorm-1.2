@@ -3,7 +3,13 @@ var scorm = pipwerks.SCORM;
 function init() {
   scorm.version = "1.2";
   scorm.init();
-  console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #00ff22; font-weight: 700;");
+  if (scorm.connection.isActive == true) {
+    console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #00ff22; font-weight: 700;");
+    app();
+  } else {
+    console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #ff001e; font-weight: 700;");
+    app();
+  }
 }
 
 function set(param, value) {
@@ -22,6 +28,20 @@ function send(value) {
   save();
 }
 
+function leerDatos() {
+  const suspendData = scorm.get("cmi.suspend_data");
+  return suspendData;
+}
+
+// function send(value) {
+//   localStorage.setItem("data", value);
+// }
+
+// function leerDatos() {
+//   const suspendData = localStorage.getItem("data");
+//   return suspendData;
+// }
+
 function get(param) {
   return scorm.get(param);
 }
@@ -30,7 +50,6 @@ function complete() {
   scorm.set("cmi.core.lesson_status", "completed");
   save();
 }
-
 
 // Distintos complete
 function completed() {
@@ -50,7 +69,6 @@ function passed2004() {
   scorm.set("cmi.success_status", "passed");
   save();
 }
-
 
 function incomplete() {
   scorm.set("cmi.core.lesson_status", "incomplete");
