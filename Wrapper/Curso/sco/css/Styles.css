@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+.trueColor {
+  color: rgb(0, 164, 0);
+}
+
+.card {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.iconImg {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.alertArea {
+  position: fixed;
+  top: 90%;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+#userLMS{
+  color: #525252;
+}

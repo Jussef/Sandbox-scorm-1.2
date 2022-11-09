@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/Styles.css" />
+    <title>Sandbox Scorm by SPIRA México</title>
+  </head>
+  <body>
+    <div class="content container">
+      <!-- *** Navbar *** -->
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <img src="./assets/img/Spira-Slogan-Color.png" alt="logo" />
+        </li>
+      </ul>
+      <!-- *** -->
+
+      <!-- *** Bienvenida *** -->
+      <div class="row">
+        <h3 id="userLMS"></h3>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Data *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-04.png" alt="icon" class="iconImg" /> Llamada <code>suspend_data();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para obtener los datos suspend data de su LMS. Con espacio maximo de 4096 caracteres.</p>
+                  <!-- <button id="btnData" type="button" class="btn btn-primary">Obtener</button> -->
+                  <button id="btnLimpiaData" type="button" class="btn btn-success">Limpiar Data</button>
+                </div>
+                <div class="col text-center">
+                  <p>Datos:</p>
+                  <div><code id="statusData">false</code></div>
+                  <br />
+                  <p>Caracteres:</p>
+                  <div><code id="statusCaracteres">0</code> de <code>4096</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Lesson Location *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-16.png" alt="icon" class="iconImg" /> Llamada <code>lesson_location();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para indicar en qué parte o sección del curso se a quedado el usuario.</p>
+                  <form id="formLocation">
+                    <div class="form-group">
+                      <label for="selectLocation">Pagina:</label>
+                      <select class="form-control" id="selectLocation">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </form>
+                  <br />
+                  <button id="btnLocation" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusLocation">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Score Raw *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-07.png" alt="icon" class="iconImg" /> Llamada <code>score.raw();</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">Esta llamada es para indicar la calificación del usuario, los LMS manejan hasta el 100%.</p>
+                  <form id="formRaw">
+                    <div class="form-group">
+                      <label for="selectRaw">Calificación:</label>
+                      <select class="form-control" id="selectRaw">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                        <option>50</option>
+                        <option>60</option>
+                        <option>70</option>
+                        <option>80</option>
+                        <option>90</option>
+                        <option>100</option>
+                      </select>
+                    </div>
+                  </form>
+                  <br />
+                  <button id="btnRaw" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusRaw">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Terminate 1 *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-37.png" alt="icon" class="iconImg" /> Llamada <code>core.lesson_status(); </code>Metodo: <code>completed</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">SCORM 1.2 - Esta llamada es para marcar el completado del curso y saber que ya esta finalizado.</p>
+                  <button id="btnTerminate1" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusTerminate1">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Terminate 2 *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-37.png" alt="icon" class="iconImg" /> Llamada <code>core.lesson_status(); </code>Metodo: <code>passed</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">SCORM 1.2 - Esta llamada es para marcar el completado del curso y saber que ya esta finalizado.</p>
+                  <button id="btnTerminate2" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusTerminate2">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Terminate 3 *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-27.png" alt="icon" class="iconImg" /> Llamada <code>completion_status(); </code>Metodo: <code>completed</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">SCORM 2004 2nd Edition - Esta llamada es para marcar el completado del curso y saber que ya esta finalizado.</p>
+                  <button id="btnTerminate3" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusTerminate3">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+
+      <!-- *** Terminate 4 *** -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header"><img src="./assets/img/icons/ICONOSSPIRA-27.png" alt="icon" class="iconImg" /> Llamada <code>success_status(); </code>Metodo: <code>passed</code></div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <p class="card-text">SCORM 2004 2nd Edition - Esta llamada es para marcar el completado del curso y saber que ya esta finalizado.</p>
+                  <button id="btnTerminate4" type="button" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col text-center">
+                  <p>Status:</p>
+                  <div><code id="statusTerminate4">false</code></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** -->
+      <div id="alertArea" class="alertArea"></div>
+    </div>
+    <!--container-->
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+  <script src="js/SCORM_API_wrapper.js"></script>
+  <script src="js/Conection.js"></script>
+  <script src="js/suspendData.js"></script>
+  <script src="js/app.js"></script>
+</html>
