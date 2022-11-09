@@ -4,11 +4,11 @@ function init() {
   scorm.version = "1.2";
   scorm.init();
   if (scorm.connection.isActive == true) {
+    app();
     console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #00ff22; font-weight: 700;");
-    app();
   } else {
-    console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #ff001e; font-weight: 700;");
     app();
+    console.log("%c Status " + scorm.connection.isActive, "font-size: 100%; color: #ff001e; font-weight: 700;");
   }
 }
 

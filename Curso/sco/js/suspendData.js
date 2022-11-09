@@ -44,6 +44,7 @@ function leerSuspendData() {
     infoPagina = 0;
     infoPuntaje = 0;
     infoMetodo = 0;
+    send("[Pagina," + infoPagina + "][Puntaje," + infoPuntaje + "][Metodo," + infoMetodo + "]");
   } else {
     var informacionSeparada = suspendData.split("]");
 

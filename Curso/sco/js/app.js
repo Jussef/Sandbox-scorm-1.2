@@ -20,23 +20,23 @@ app = () => {
 
     if (lesson_status1 == "completed") {
       $("#statusTerminate1").text(lesson_status1);
-      $("#statusTerminate1").addClass("trueColor")
+      $("#statusTerminate1").addClass("trueColor");
     } else {
       $("#statusTerminate1").text("false");
       $("#statusTerminate1").removeClass("trueColor");
     }
-    
+
     if (lesson_status2 == "passed") {
       $("#statusTerminate2").text(lesson_status2);
-      $("#statusTerminate2").addClass("trueColor")
+      $("#statusTerminate2").addClass("trueColor");
     } else {
       $("#statusTerminate2").text("false");
       $("#statusTerminate2").removeClass("trueColor");
     }
-    
+
     if (lesson_status3 == "completed") {
       $("#statusTerminate3").text(lesson_status3);
-      $("#statusTerminate3").addClass("trueColor")
+      $("#statusTerminate3").addClass("trueColor");
     } else {
       $("#statusTerminate3").text("false");
       $("#statusTerminate3").removeClass("trueColor");
@@ -44,7 +44,7 @@ app = () => {
 
     if (lesson_status4 == "passed") {
       $("#statusTerminate4").text(lesson_status4);
-      $("#statusTerminate4").addClass("trueColor")
+      $("#statusTerminate4").addClass("trueColor");
     } else {
       $("#statusTerminate4").text("false");
       $("#statusTerminate4").removeClass("trueColor");
@@ -93,18 +93,18 @@ app = () => {
 
   //// Area de botones ////
 
-  // $("#btnData").click(function () {
-  //   const datos = leerDatos();
-  //   if (datos == "" || datos == " " || datos == null || datos == undefined) {
-  //     $("#statusData").text("null");
-  //     $("#statusData").removeClass("trueColor");
-  //     countChars("");
-  //   } else {
-  //     $("#statusData").addClass("trueColor");
-  //     $("#statusData").text(datos);
-  //     countChars(datos);
-  //   }
-  // });
+  $("#btnData").click(function () {
+    const datos = leerDatos();
+    if (datos == "" || datos == " " || datos == null || datos == undefined) {
+      $("#statusData").text("null");
+      $("#statusData").removeClass("trueColor");
+      countChars("");
+    } else {
+      $("#statusData").addClass("trueColor");
+      $("#statusData").text(datos);
+      countChars(datos);
+    }
+  });
 
   $("#btnLimpiaData").click(function () {
     localStorage.clear();
