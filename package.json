@@ -5,12 +5,20 @@
   "dependencies": {
     "cli-color": "^2.0.0",
     "moment": "^2.29.1",
-    "zip-a-folder": "^0.0.9"
+    "zip-a-folder": "^0.0.9",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.3.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   },
   "scripts": {
     "inicia": "http-server -a localhost -p 8000 -c-1",
     "zip": "node ./scripts/creajs.js && node ./scripts/empaquetado.js",
     "fecha": "node ./scripts/creajs.js",
-    "prod": "netlify deploy --prod -d Curso/sco"
+    "prod": "netlify deploy --prod -d Curso/sco",
+    "dev": "nodemon Wrapper/index.js"
   }
 }
