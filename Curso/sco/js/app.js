@@ -60,7 +60,7 @@ app = () => {
       countChars(datos);
     }
   };
-  // actualizaDatos();
+  actualizaDatos();
 
   ////  Alerts  ////
   const alertPlaceholder = document.getElementById("alertArea");
