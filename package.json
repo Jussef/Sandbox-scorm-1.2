@@ -19,6 +19,6 @@
     "zip": "node ./scripts/creajs.js && node ./scripts/empaquetado.js",
     "fecha": "node ./scripts/creajs.js",
     "prod": "netlify deploy --prod -d Curso/sco",
-    "dev": "nodemon Wrapper/index.js"
+    "dev": "nodemon index.js"
   }
 }
