@@ -720,7 +720,7 @@ pipwerks.UTILS.trace = function (msg) {
   if (pipwerks.debug.isActive) {
     if (window.console && window.console.log) {
       // window.console.log(msg);
-      console.log("%c " + msg, "font-size: 100%; color: #00AEFF; font-weight: 700;");
+      // console.log("%c " + msg, "font-size: 100%; color: #00AEFF; font-weight: 700;");
     } else {
       //alert(msg);
       console.log("%c " + msg, "font-size: 90%; color: #EF5350; font-weight: 700;");
